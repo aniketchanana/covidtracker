@@ -9,7 +9,7 @@ html,body{
 }
 .main__container{
     height: 100vh;
-    background: url('../images/engin-akyurt-z9Bbk7o8MNU-unsplash.jpg    ');
+    background-color: rgba(0,0,0,0.85);
     background-size: cover;
     display: flex;
     flex-direction: column;
