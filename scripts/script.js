@@ -44,7 +44,7 @@ function populateCountries(allCountries) {
         opt.innerHTML = allCountries[i].name;
         if(allCountries[i].name === 'India') {
             opt.selected = true;
-            DISPLAY__COUNTRY.textContent = allCountries[i].name
+            // DISPLAY__COUNTRY.textContent = allCountries[i].name
         }
         opt.setAttribute('class','country__option')
         COUNTRY__MENU.appendChild(opt);
@@ -53,11 +53,7 @@ function populateCountries(allCountries) {
 
 COUNTRY__MENU.addEventListener('change',function(e) {
     let code = e.target.value;
-    let select = e.target;
-    DISPLAY__COUNTRY.textContent = select.options[select.selectedIndex].text;
+    // let select = e.target;
+    // DISPLAY__COUNTRY.textContent = select.options[select.selectedIndex].text;
     getCountryData(e.target.value);
 })
-
-function myNewFunction(sel) {
-    alert(sel.options[sel.selectedIndex].text);
-  }

@@ -99,6 +99,14 @@ html,body{
     font-weight: bold;
 }
 
+.footer{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
 @media (max-width:729px) {
     .country__name{
         width: 80%;
