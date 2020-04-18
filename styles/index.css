@@ -89,7 +89,16 @@ html,body{
     color: rgba(0, 0, 0, 0.8);
 }
 
-
+#display__country {	
+    /* border: 1px solid white; */	
+    text-transform: uppercase;	
+    position: absolute;	
+    top: 30px;	
+    color: white;	
+    font-size: 40px;	
+    letter-spacing: 5px;	
+    font-weight: bold;	
+}
 
 @media (max-width:729px) {
     .country__name{
@@ -103,5 +112,9 @@ html,body{
     .value {
         margin-top: 10px;
         width: 40%;
+    }
+    #display__country {	
+        color: white;	
+        font-size: 20px;		
     }
 }

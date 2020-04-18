@@ -3,7 +3,6 @@ const COUNTRY__MENU = document.getElementById('all__countries');
 const CONFIRMED = document.getElementById('confirmedcases');
 const RECOVERED = document.getElementById('recoveredcases');
 const DEATHS = document.getElementById('deathcases');
-const DISPLAY__COUNTRY = document.getElementById('display__country');
 
 
 document.querySelector('body').onload = function() {
@@ -44,7 +43,6 @@ function populateCountries(allCountries) {
         opt.innerHTML = allCountries[i].name;
         if(allCountries[i].name === 'India') {
             opt.selected = true;
-            // DISPLAY__COUNTRY.textContent = allCountries[i].name
         }
         opt.setAttribute('class','country__option')
         COUNTRY__MENU.appendChild(opt);
