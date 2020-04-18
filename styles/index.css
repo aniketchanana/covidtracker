@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html,body{
+    padding: 0;
+    margin: 0;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.main__container{
+    height: 100vh;
+    background: url('../images/engin-akyurt-z9Bbk7o8MNU-unsplash.jpg    ');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.query__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.country__name{
+    width: 30%;
+    font-size: 13px;
+    padding: 15px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.search{
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    background-color: rgba(79, 34, 109,0.9);
+    color: white;
+    border-radius: 40px;
+    padding: 12px;
+    margin-top: 30px;
+    width: 8%;
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.search:hover{
+    background-color: rgba(79, 34, 109,1);
+}
+
+.results{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+}
+.value__heading{
+    color: white;
+}
+.value{
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.value__heading{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 1000;
+    letter-spacing: 2px;
+}
+
+.stats {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#display__country {
+    /* border: 1px solid white; */
+    text-transform: uppercase;
+    position: absolute;
+    top: 30px;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+@media (max-width:729px) {
+    .country__name{
+        width: 80%;
+    }
+    .results{
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .value {
+        margin-top: 10px;
+        width: 40%;
+    }
+}
